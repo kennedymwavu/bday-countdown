@@ -1,12 +1,15 @@
 body {
-    /* background-color: coral; */
+    background-color: #03d3f4;
     /* color: white; */
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .bd_container {
-    width: 80%;
+    color: white;
+    font-size: 150%;
+    width: 90%;
+    height: 50vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,7 +18,10 @@ body {
 }
 
 .bd_container > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
+    padding-bottom: 10%;
+}
+
+h1 {
+    color: blue;
 }
