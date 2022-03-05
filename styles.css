@@ -1,6 +1,21 @@
 body {
-    background-color: coral;
-    color: white;
+    /* background-color: coral; */
+    /* color: white; */
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bd_container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+.bd_container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
