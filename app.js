@@ -46,4 +46,24 @@ function countDown() {
 }
 
 // execute `countDown()` every second:
-timerId = setInterval(countDown, second);
+// timerId = setInterval(countDown, second);
+
+
+// ----style grid elements----
+const friendIds = {
+    "mwavu_bd": "blue", "ayoo_bd": "yellow", "lazarus_bd": "green", 
+    "joy_bd": "yellow", "evans_bd": "black", "rachael_bd": "orange", 
+    "collins_bd": "violet", "nelvine_bd": "indigo", "brenda_bd": "red"
+};
+    
+// function to change background-color of a given html class:
+function changeBg(friendIds) {
+    for (friend in friendIds) {
+        // remove underscore from name to get the real id:
+        let realId = friend.split("_")[0];
+        // change backgroundColor:
+        document.getElementById(realId).style.backgroundColor = friendIds[friend];
+    }
+}
+
+changeBg(friendIds);
